@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ReFormacja - Renowacja Wnętrz",
-  description: "Premium renowacja skóry, soft-touch, drewna, ceramiki i PVC. Gdynia, Sopot, Gdańsk.",
+  title: "ReFormacja | Premium Renowacja Wnętrz Jachtów i Samochodów",
+  description: "Skóra, soft-touch, drewno, ceramika i PVC. Mobilne atelier. Gdynia · Sopot · Gdańsk.",
+  keywords: "renowacja, skóra, soft-touch, drewno, PVC, ceramika, samochód, jacht, Gdynia, Gdańsk",
 };
 
 export default function RootLayout({
@@ -13,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body>{children}</body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
